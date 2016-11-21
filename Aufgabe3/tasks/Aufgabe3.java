@@ -126,7 +126,12 @@ public class Aufgabe3 {
     }
     
     public static int wert(int[][] f, int spieler){
-         return wert1(f, spieler) - wert1(f, (spieler * -1) -1);
+        if (spieler == 1) {
+            return wert1(f, spieler) - wert1(f, 2);
+        } else {
+            return wert1(f, spieler) - wert1(f, 1);
+        }
+
 
     }
     //**************************************************************************
@@ -270,21 +275,16 @@ public class Aufgabe3 {
                         if (f[i + x][j + y] == spieler) {
                             ++count;
                             punkte.add(VALUE[count]);
-                            if (count >= 0) System.out.println(i + "/" + j + "/" + k + " - " + x + "  :  " + count);
+                           // if (count >= 0) System.out.println(i + "/" + j + "/" + k + " - " + x + "  :  " + count);
                         }  else {
-                           // punkte.add(VALUE[count]);
-                          //  if (count >= 2) System.out.println("NS" + i + "/" + j + "/" + k + " - " + x + "  :  " + count);
-                            count = 0;
                             break;
                         }
                     } else {
-                        System.out.println("B " + i + "/" + j + "/" + k + " - " + x + "  :  " + count);
+                       // System.out.println("B " + i + "/" + j + "/" + k + " - " + x + "  :  " + count);
                         break;
                     }
 
                 }
-                //punkte.add(VALUE[count]);
-
             }
         }
     }
