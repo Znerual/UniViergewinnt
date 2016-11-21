@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f859384-5eb7-42ca-9d4e-b7689a1a07a6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Aufgabe3/build/classes/main/Aufgabe3.class" afterPath="$PROJECT_DIR$/Aufgabe3/build/classes/main/Aufgabe3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Aufgabe3/build/classes/main/Points.class" afterPath="$PROJECT_DIR$/Aufgabe3/build/classes/main/Points.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Aufgabe3/tasks/Aufgabe3.java" afterPath="$PROJECT_DIR$/Aufgabe3/tasks/Aufgabe3.java" />
     </list>
@@ -55,10 +54,10 @@
       <file leaf-file-name="Aufgabe3.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Aufgabe3/tasks/Aufgabe3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="275" column="34" selection-start-line="275" selection-start-column="34" selection-end-line="275" selection-end-column="34" />
+            <state relative-caret-position="385">
+              <caret line="280" column="23" selection-start-line="280" selection-start-column="23" selection-end-line="280" selection-end-column="23" />
               <folding>
-                <element signature="e#0#14879#0" expanded="true" />
+                <element signature="e#0#15077#0" expanded="true" />
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
@@ -88,8 +87,8 @@
       <file leaf-file-name="Aufgabe3Test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Aufgabe3/tests/Aufgabe3Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+            <state relative-caret-position="476">
+              <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -685,27 +684,17 @@
       <updated>1417171824513</updated>
       <workItem from="1479579201004" duration="140000" />
     </task>
+    <task id="LOCAL-00001" summary="Solved one problem of many (maybe created some more ; )&#10;Die Diagonale die nach unten geht terminiert sofort, falls das erste Feld nicht das vom Spieler ist">
+      <created>1479750103855</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1479750103855</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Aufgabe3Test - 2016.11.19 at 22h 17m 55s.xml">
-      <configuration name="Aufgabe3Test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Aufgabe3Test - 2016.11.19 at 22h 21m 47s.xml">
-      <configuration name="Aufgabe3Test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Aufgabe3Test - 2016.11.19 at 22h 23m 31s.xml">
-      <configuration name="Aufgabe3Test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Aufgabe3Test - 2016.11.19 at 22h 24m 19s.xml">
-      <configuration name="Aufgabe3Test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Aufgabe3Test - 2016.11.20 at 12h 33m 36s.xml">
-      <configuration name="Aufgabe3Test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Aufgabe3Test - 2016.11.20 at 12h 33m 47s.xml">
-      <configuration name="Aufgabe3Test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Aufgabe3Test - 2016.11.20 at 12h 39m 54s.xml">
       <configuration name="Aufgabe3Test" configurationId="JUnit" />
     </history-entry>
@@ -716,6 +705,24 @@
       <configuration name="Aufgabe3Test" configurationId="JUnit" />
     </history-entry>
     <history-entry file="Aufgabe3Test - 2016.11.21 at 18h 39m 45s.xml">
+      <configuration name="Aufgabe3Test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Aufgabe3Test - 2016.11.21 at 18h 43m 15s.xml">
+      <configuration name="Aufgabe3Test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Aufgabe3Test - 2016.11.21 at 18h 44m 06s.xml">
+      <configuration name="Aufgabe3Test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Aufgabe3Test - 2016.11.21 at 18h 44m 58s.xml">
+      <configuration name="Aufgabe3Test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Aufgabe3Test - 2016.11.21 at 18h 45m 27s.xml">
+      <configuration name="Aufgabe3Test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Aufgabe3Test - 2016.11.21 at 18h 46m 01s.xml">
+      <configuration name="Aufgabe3Test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Aufgabe3Test - 2016.11.21 at 18h 47m 53s.xml">
       <configuration name="Aufgabe3Test" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -795,6 +802,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Solved one problem of many (maybe created some more ; )&#10;Die Diagonale die nach unten geht terminiert sofort, falls das erste Feld nicht das vom Spieler ist" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solved one problem of many (maybe created some more ; )&#10;Die Diagonale die nach unten geht terminiert sofort, falls das erste Feld nicht das vom Spieler ist" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -860,13 +871,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Aufgabe3/tasks/Aufgabe3.java</url>
-          <line>298</line>
+          <line>300</line>
           <properties />
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Aufgabe3/tasks/Aufgabe3.java</url>
-          <line>303</line>
+          <line>305</line>
           <properties />
           <option name="timeStamp" value="25" />
         </line-breakpoint>
@@ -910,7 +921,7 @@
         <state relative-caret-position="225">
           <caret line="9" column="74" selection-start-line="9" selection-start-column="74" selection-end-line="9" selection-end-column="74" />
           <folding>
-            <element signature="e#0#14879#0" expanded="true" />
+            <element signature="e#0#15077#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -953,7 +964,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#14879#0" expanded="true" />
+            <element signature="e#0#15077#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -1004,7 +1015,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#14879#0" expanded="true" />
+            <element signature="e#0#15077#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -1015,7 +1026,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#14879#0" expanded="true" />
+            <element signature="e#0#15077#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -1044,7 +1055,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#14879#0" expanded="true" />
+            <element signature="e#0#15077#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -1073,7 +1084,7 @@
         <state relative-caret-position="0">
           <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
           <folding>
-            <element signature="e#0#14879#0" expanded="true" />
+            <element signature="e#0#15077#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -1102,7 +1113,7 @@
         <state relative-caret-position="0">
           <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
           <folding>
-            <element signature="e#0#14879#0" expanded="true" />
+            <element signature="e#0#15077#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -1131,7 +1142,7 @@
         <state relative-caret-position="0">
           <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
           <folding>
-            <element signature="e#0#14879#0" expanded="true" />
+            <element signature="e#0#15077#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -1160,7 +1171,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#14879#0" expanded="true" />
+            <element signature="e#0#15077#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -1189,7 +1200,7 @@
         <state relative-caret-position="0">
           <caret line="9" column="79" selection-start-line="9" selection-start-column="79" selection-end-line="9" selection-end-column="79" />
           <folding>
-            <element signature="e#0#14879#0" expanded="true" />
+            <element signature="e#0#15077#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -1218,7 +1229,7 @@
         <state relative-caret-position="0">
           <caret line="9" column="79" selection-start-line="9" selection-start-column="79" selection-end-line="9" selection-end-column="79" />
           <folding>
-            <element signature="e#0#14879#0" expanded="true" />
+            <element signature="e#0#15077#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -1247,7 +1258,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="21" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
           <folding>
-            <element signature="e#0#14879#0" expanded="true" />
+            <element signature="e#0#15077#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -1281,16 +1292,6 @@
         <state relative-caret-position="34">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Aufgabe3/tests/Aufgabe3Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1328,12 +1329,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Aufgabe3/tests/Aufgabe3Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Aufgabe3/tasks/Aufgabe3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="275" column="34" selection-start-line="275" selection-start-column="34" selection-end-line="275" selection-end-column="34" />
+        <state relative-caret-position="385">
+          <caret line="280" column="23" selection-start-line="280" selection-start-column="23" selection-end-line="280" selection-end-column="23" />
           <folding>
-            <element signature="e#0#14879#0" expanded="true" />
+            <element signature="e#0#15077#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
