@@ -139,19 +139,64 @@ public class Aufgabe3 {
     
     
     //***************************  Aufgabe 4  **********************************
-    public static int negamax(int[][] f, int spieler, int tiefe){
-        //Nicht fertig
-        int bestMove = 0, bestRanking = 0;
+    private static Move besterZug(int[][] f, int spieler) {
+        Move best = new Move();
+        int ranking = 0;
+        boolean firstRound = true;
         for (int i = 0; i < 6; i++) {
             int [][] fictionalMove = deepCopy(f);
             zug(fictionalMove, spieler, i);
-            int rank = wert1(fictionalMove,spieler);
-            if (rank > bestRanking) {
-                bestMove = i;
-                bestRanking = rank;
+            ranking = wert(fictionalMove,spieler);
+            if (ranking > best.getRank() || firstRound == true) {
+                best.setMove(i);
+                best.setRank(ranking);
+                firstRound = false;
             }
         }
-        return bestMove; //di
+        return best; //di
+    }
+    public static int negamaxRec(int[][] f, int spieler, int tiefe) {
+        if (tiefe == 0) {
+            return wert(f, spieler);
+        }
+        int bestValue = -199999;
+        for (int i = 0; i < s; i++) {
+            int[][] nodeLine = deepCopy(f);
+            zug(f, spieler, i);
+            int value =  -negamaxRec(nodeLine,spieler, tiefe -1);
+            bestValue = Math.max(bestValue, value);
+        }
+        return bestValue;
+
+
+
+
+    }
+
+    public static int negamax(int[][] f, int spieler, int tiefe){
+       /* if (tiefe == 0) {
+            return wert(f, spieler);
+        }
+        int[][] simulateMoves = deepCopy(f);
+        int sum = 0;
+        int currentSpieler = spieler;
+        for (int i = 0; i < tiefe; i++) {
+
+            Move optimal = besterZug(simulateMoves,spieler);
+            System.out.println("Curretn depth: " + i + " best Move: " + optimal.getMove() + " with ranking " + optimal.getRank());
+            spielstand(simulateMoves);
+            zug(simulateMoves,currentSpieler,optimal.getMove());
+            System.out.println("After");
+            spielstand(simulateMoves);
+            if (currentSpieler == spieler) {
+                sum = optimal.getRank();
+            }
+            currentSpieler = toggleSpieler(spieler);
+        }
+        return sum;
+*/
+        int[][] simulateMoves = deepCopy(f);
+       return negamaxRec(simulateMoves, spieler, tiefe);
     }
     private static int[][] deepCopy(int[][] array) {
         int[][] copy = new int[array.length][];
@@ -162,7 +207,7 @@ public class Aufgabe3 {
     }
     
     public static int bester(int[][] f, int spieler, int tiefe){
-        return -1 //ese Anweisung ändern oder löschen.
+        return -1; //ese Anweisung ändern oder löschen.
     }
     //**************************************************************************
     
@@ -180,7 +225,16 @@ public class Aufgabe3 {
 
         return ia_spielfeld; //diese Anweisung ändern oder löschen.
     }
-
+    private static int toggleSpieler(int spieler) {
+        switch (spieler) {
+            case 1:
+                return 2;
+            case 2:
+                return 1;
+            default:
+                return -1;
+        }
+    }
     public static void spielstand(int[][] f){
         for (int i = r -1; i >= 0; i--) {
             System.out.print("|");
@@ -263,19 +317,19 @@ public class Aufgabe3 {
         return  false;
     }
     private static void testAll(int [][] f, int spieler, Points punkte) {
-        spielstand(f);
+       // spielstand(f);
         // /
         testDiagonal(f, spieler, true, punkte);
-        System.out.println(punkte.getValue());
+        //System.out.println(punkte.getValue());
         // \
         testDiagonal(f,spieler,false, punkte);
-        System.out.println(punkte.getValue());
+       // System.out.println(punkte.getValue());
         //Horizontal
         testStraight(f,spieler,r,s, true, punkte);
-        System.out.println(punkte.getValue());
+       // System.out.println(punkte.getValue());
         //Vertikal
         testStraight(f,spieler,s,r, false, punkte);
-        System.out.println(punkte.getValue());
+        //System.out.println(punkte.getValue());
     }
     private static void testDiagonal(int [][] f, int spieler,  boolean leftToRight, Points punkte) {
         for (int i = 0; i < r; i++ ){
@@ -398,4 +452,35 @@ class Points {
         m_value += punkte;
     }
     private int m_value = 0;
+}
+class Move {
+    public int getMove() {
+        return move;
+    }
+
+    public void setMove(int move) {
+        this.move = move;
+    }
+
+    public void setRank(int rank) {
+        this.rank = rank;
+    }
+
+    int move;
+
+    public int getRank() {
+        return rank;
+    }
+
+    public Move() {
+        this.move = 0;
+        this.rank = 0;
+    }
+
+    public Move(int move, int rank) {
+        this.move = move;
+        this.rank = rank;
+    }
+
+    int rank;
 }
