@@ -269,9 +269,11 @@ public class Aufgabe3 {
                     if (j + y < s && i + x < r && x + i >= 0) {
                         if (f[i + x][j + y] == spieler) {
                             ++count;
+                            System.out.println(i + "/" + j + "/" + k + " - " + x + "  :  " + count);
                         }  else {
                             punkte.add(VALUE[count]);
                             count = 0;
+                            break;
                         }
                     } else {
                        // System.out.println("B " + i + "/" + j + "/" + k + " - " + x + "  :  " + count);
