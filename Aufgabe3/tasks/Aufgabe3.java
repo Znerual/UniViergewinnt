@@ -109,6 +109,7 @@
     ****************************************************************************
 */
 import java.awt.*;
+import java.util.Arrays;
 import java.util.Scanner;
 public class Aufgabe3 {
     static final int r = 6;
@@ -139,14 +140,29 @@ public class Aufgabe3 {
     
     //***************************  Aufgabe 4  **********************************
     public static int negamax(int[][] f, int spieler, int tiefe){
-        // TODO: Implementieren Sie hier die Angabe
-        return -1; //diese Anweisung ändern oder löschen.
+        //Nicht fertig
+        int bestMove = 0, bestRanking = 0;
+        for (int i = 0; i < 6; i++) {
+            int [][] fictionalMove = deepCopy(f);
+            zug(fictionalMove, spieler, i);
+            int rank = wert1(fictionalMove,spieler);
+            if (rank > bestRanking) {
+                bestMove = i;
+                bestRanking = rank;
+            }
+        }
+        return bestMove; //di
+    }
+    private static int[][] deepCopy(int[][] array) {
+        int[][] copy = new int[array.length][];
+        for (int i = 0; i < array.length; i++) {
+            copy[i] = Arrays.copyOf(array[i], array[i].length);
+        }
+        return copy;
     }
     
-    
     public static int bester(int[][] f, int spieler, int tiefe){
-        // TODO: Implementieren Sie hier die Angabe
-        return -1; //diese Anweisung ändern oder löschen.
+        return -1 //ese Anweisung ändern oder löschen.
     }
     //**************************************************************************
     
