@@ -109,11 +109,13 @@
     ****************************************************************************
 */
 
+import javax.swing.*;
+import java.awt.*;
 import java.util.Arrays;
 import java.util.Scanner;
 public class Aufgabe3 {
-    private static final int r = 6;
-    private static final int s = 7;
+    public static final int r = 6;
+   public static final int s = 7;
     private static final int victoryLimit = 4;
     private static boolean unerlaubterZug = false;
     private static final int[] VALUE = {0,0,1,100,10000};
@@ -155,7 +157,7 @@ public class Aufgabe3 {
         }
         return best; //di
     }
-    public static int negamaxRec(int[][] f, int spieler, int tiefe) {
+    public static int negamax(int[][] f, int spieler, int tiefe) {
         if (tiefe == 0) {
             return wert(f, spieler);
         }
@@ -164,7 +166,7 @@ public class Aufgabe3 {
             int[][] nodeLine = deepCopy(f);
             zug(nodeLine, spieler, i);
            // spielstand(nodeLine);
-            int value =  -negamaxRec(nodeLine,toggleSpieler(spieler), tiefe -1);
+            int value =  -negamax(nodeLine,toggleSpieler(spieler), tiefe -1);
            // System.out.println("Negmax Value: " + value + " für Spieler " + spieler);
             bestValue = Math.max(bestValue, value);
            // System.out.println("Best Value: " + bestValue);
@@ -176,10 +178,6 @@ public class Aufgabe3 {
 
     }
 
-    public static int negamax(int[][] f, int spieler, int tiefe){
-       int[][] simulateMoves = deepCopy(f);
-       return negamaxRec(simulateMoves, spieler, tiefe);
-    }
     private static int[][] deepCopy(int[][] array) {
         int[][] copy = new int[array.length][];
         for (int i = 0; i < array.length; i++) {
@@ -212,6 +210,7 @@ public class Aufgabe3 {
     //***************************  Aufgabe 5  **********************************
     public static void spiel1(int tiefe){
         int[][] ai_spielfeld = spielfeld();
+        Visual optisch = new Visual(ai_spielfeld);
         boolean gameOver = false;
         int computer = 1;
         int currentPlayer = 1;
@@ -225,6 +224,7 @@ public class Aufgabe3 {
                 if (currentPlayer == computer) {
                     int findMove = bester(ai_spielfeld, currentPlayer, tiefe);
                     zug(ai_spielfeld,currentPlayer, findMove);
+
                 } else {
                     do {
                         int spalte = getInputSpalte(scanner, currentPlayer);
@@ -232,7 +232,7 @@ public class Aufgabe3 {
                         if (unerlaubterZug) System.out.println("Hier kannst du keinen Stein platzieren!");
                     } while (unerlaubterZug);
                 }
-
+            optisch.move(ai_spielfeld);
             gameOver = (gameFull(ai_spielfeld) || sieg(ai_spielfeld, currentPlayer));
             currentPlayer = currentPlayer == 1 ? 2 : 1;
         } while(!gameOver);
@@ -241,7 +241,7 @@ public class Aufgabe3 {
 //**************************************************************************
     
     public static void main(String[] args) {
-        spiel1(7);
+        spiel1(5);
     }
     public static int[][] spielfeld(){
         int ia_spielfeld[][] = new int[r][s];
@@ -491,6 +491,56 @@ class Move {
         initialised = true;
     }
     public boolean isInitialised() { return initialised;}
+}
+class Visual extends JFrame {
+    public static final int spaltenBreite = 20;
+    public static final int zeilenHoehe = 20;
+    private Field panel;
+    public Visual(int[][] startGrid) {
+        this.setTitle("Spielfeld");
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setSize(spaltenBreite * Aufgabe3.s + 2 * Field.offsetX + 50, zeilenHoehe * Aufgabe3.r + + 2 * Field.offsetY + 50);
+        panel = new Field(startGrid);
+        this.add(panel);
+        this.setVisible(true);
+    }
+    public void move(int[][] f) {
+        panel.makeMove(f);
+    }
 
+}
+class Field extends JPanel {
+    public static final int offsetX = 20;
+   public static final int offsetY = 20;
+    private int[][] spielfeld;
+    public void makeMove(int[][] newField) {
+        spielfeld = newField;
+        this.repaint();
+    }
+    public Field(int[][] startGrid) {
+        spielfeld = startGrid;
+    }
+    public void paintComponent(Graphics g) {
+        for (int i = 0; i < Aufgabe3.s + 1; i++) {
+            g.drawLine(offsetX + (i * Visual.spaltenBreite), offsetY,offsetX + (i * Visual.spaltenBreite), offsetY + (Aufgabe3.r + 1) * Visual.zeilenHoehe);
+        }
+        for (int i = 0; i < Aufgabe3.r + 1; i++) {
+            g.drawLine(offsetX , offsetY  + ((i+1) * Visual.zeilenHoehe),offsetX + (Aufgabe3.s) * Visual.zeilenHoehe, offsetY  + ((i+1) * Visual.zeilenHoehe));
+        }
+        for (int i = Aufgabe3.r - 1; i >= 0;i--) {
+            for (int j = 0; j < Aufgabe3.s; j++) {
+                switch (spielfeld[i][j]) {
+                    case 1:
+                        g.setColor(new Color(255,20,20));
+                        g.fillOval(offsetX + (j * Visual.spaltenBreite), offsetY + ( (Aufgabe3.r - i) * Visual.zeilenHoehe), Visual.spaltenBreite, Visual.zeilenHoehe );
+                        break;
+                    case 2:
+                        g.setColor(new Color(20,255, 20));
+                        g.fillOval(offsetX + (j * Visual.spaltenBreite), offsetY + ((Aufgabe3.r - i) * Visual.zeilenHoehe), Visual.spaltenBreite, Visual.zeilenHoehe );
+                        break;
+                }
 
+            }
+        }
+    }
 }
