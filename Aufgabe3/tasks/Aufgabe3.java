@@ -162,9 +162,12 @@ public class Aufgabe3 {
         int bestValue = -199999;
         for (int i = 0; i < s; i++) {
             int[][] nodeLine = deepCopy(f);
-            zug(f, spieler, i);
-            int value =  -negamaxRec(nodeLine,spieler, tiefe -1);
+            zug(nodeLine, spieler, i);
+           // spielstand(nodeLine);
+            int value =  -negamaxRec(nodeLine,toggleSpieler(spieler), tiefe -1);
+           // System.out.println("Negmax Value: " + value + " für Spieler " + spieler);
             bestValue = Math.max(bestValue, value);
+           // System.out.println("Best Value: " + bestValue);
         }
         return bestValue;
 
@@ -174,28 +177,7 @@ public class Aufgabe3 {
     }
 
     public static int negamax(int[][] f, int spieler, int tiefe){
-       /* if (tiefe == 0) {
-            return wert(f, spieler);
-        }
-        int[][] simulateMoves = deepCopy(f);
-        int sum = 0;
-        int currentSpieler = spieler;
-        for (int i = 0; i < tiefe; i++) {
-
-            Move optimal = besterZug(simulateMoves,spieler);
-            System.out.println("Curretn depth: " + i + " best Move: " + optimal.getMove() + " with ranking " + optimal.getRank());
-            spielstand(simulateMoves);
-            zug(simulateMoves,currentSpieler,optimal.getMove());
-            System.out.println("After");
-            spielstand(simulateMoves);
-            if (currentSpieler == spieler) {
-                sum = optimal.getRank();
-            }
-            currentSpieler = toggleSpieler(spieler);
-        }
-        return sum;
-*/
-        int[][] simulateMoves = deepCopy(f);
+       int[][] simulateMoves = deepCopy(f);
        return negamaxRec(simulateMoves, spieler, tiefe);
     }
     private static int[][] deepCopy(int[][] array) {
@@ -207,7 +189,22 @@ public class Aufgabe3 {
     }
     
     public static int bester(int[][] f, int spieler, int tiefe){
-        return -1; //ese Anweisung ändern oder löschen.
+        Move optimal = new Move();
+        for (int i = 0; i < s; i++) {
+            int[][] f1 = deepCopy(f);
+            zug(f1,spieler,i);
+            spielstand(f1);
+            int value = negamax(f1, spieler, tiefe);
+            System.out.printf("Zug negmax wert: " + value);
+            if (!optimal.isInitialised()) {
+                optimal.setRank(value);
+            } else if (value > optimal.getRank()){
+                optimal.setRank(value);
+                optimal.setMove(i);
+            }
+            System.out.println("Bester Zug: " + optimal.getMove());
+        }
+        return optimal.getMove();
     }
     //**************************************************************************
     
@@ -454,19 +451,25 @@ class Points {
     private int m_value = 0;
 }
 class Move {
+    int rank;
+    int move;
+    boolean initialised;
+
     public int getMove() {
         return move;
     }
 
     public void setMove(int move) {
         this.move = move;
+        initialised = true;
     }
 
     public void setRank(int rank) {
         this.rank = rank;
+        initialised = true;
     }
 
-    int move;
+
 
     public int getRank() {
         return rank;
@@ -480,7 +483,9 @@ class Move {
     public Move(int move, int rank) {
         this.move = move;
         this.rank = rank;
+        initialised = true;
     }
+    public boolean isInitialised() { return initialised;}
 
-    int rank;
+
 }
