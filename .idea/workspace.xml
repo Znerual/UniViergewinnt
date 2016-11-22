@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f859384-5eb7-42ca-9d4e-b7689a1a07a6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Aufgabe3/build/classes/main/Aufgabe3.class" afterPath="$PROJECT_DIR$/Aufgabe3/build/classes/main/Aufgabe3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Aufgabe3/build/classes/main/Points.class" afterPath="$PROJECT_DIR$/Aufgabe3/build/classes/main/Points.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Aufgabe3/tasks/Aufgabe3.java" afterPath="$PROJECT_DIR$/Aufgabe3/tasks/Aufgabe3.java" />
     </list>
     <ignored path="Aufgabenblatt3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -55,8 +52,8 @@
       <file leaf-file-name="Aufgabe3.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Aufgabe3/tasks/Aufgabe3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1646">
-              <caret line="168" column="0" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
+            <state relative-caret-position="380">
+              <caret line="523" column="28" selection-start-line="523" selection-start-column="28" selection-end-line="523" selection-end-column="28" />
               <folding>
                 <element signature="e#0#20281#0" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -823,7 +820,14 @@
       <option name="project" value="LOCAL" />
       <updated>1479838312923</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Visual Output erstellt">
+      <created>1479841950460</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1479841950460</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -942,7 +946,8 @@
     <MESSAGE value="negamax weitergeführt, deepCopy durch passende Funktion zum zurücknehmen der züge ersetzen" />
     <MESSAGE value="negmax funktioniert" />
     <MESSAGE value="Projekt fehlerfrei (laut test), bester funktionert aber nicht optimal, ich glaube entweder negamax funktioniert nicht perfekt oder bester" />
-    <option name="LAST_COMMIT_MESSAGE" value="Projekt fehlerfrei (laut test), bester funktionert aber nicht optimal, ich glaube entweder negamax funktioniert nicht perfekt oder bester" />
+    <MESSAGE value="Visual Output erstellt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Visual Output erstellt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1592,8 +1597,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Aufgabe3/tasks/Aufgabe3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1646">
-          <caret line="168" column="0" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
+        <state relative-caret-position="380">
+          <caret line="523" column="28" selection-start-line="523" selection-start-column="28" selection-end-line="523" selection-end-column="28" />
           <folding>
             <element signature="e#0#20281#0" expanded="true" />
             <element signature="imports" expanded="true" />
