@@ -108,15 +108,15 @@
     indem Sie gegen den Computer spielen.
     ****************************************************************************
 */
-import java.awt.*;
+
 import java.util.Arrays;
 import java.util.Scanner;
 public class Aufgabe3 {
-    static final int r = 6;
-    static final int s = 7;
-    static final int victoryLimit = 4;
-    static boolean unerlaubterZug = false;
-    static final int[] VALUE = {0,0,1,100,10000};
+    private static final int r = 6;
+    private static final int s = 7;
+    private static final int victoryLimit = 4;
+    private static boolean unerlaubterZug = false;
+    private static final int[] VALUE = {0,0,1,100,10000};
 
     //***************************  Aufgabe 3  **********************************
     public static int wert1(int[][] f, int spieler){
@@ -193,16 +193,16 @@ public class Aufgabe3 {
         for (int i = 0; i < s; i++) {
             int[][] f1 = deepCopy(f);
             zug(f1,spieler,i);
-            spielstand(f1);
+            //spielstand(f1);
             int value = negamax(f1, spieler, tiefe);
-            System.out.printf("Zug negmax wert: " + value);
+            //System.out.println("Zug negmax wert: " + value);
             if (!optimal.isInitialised()) {
                 optimal.setRank(value);
-            } else if (value > optimal.getRank()){
+            } else if (value >= optimal.getRank()){
                 optimal.setRank(value);
                 optimal.setMove(i);
             }
-            System.out.println("Bester Zug: " + optimal.getMove());
+            //System.out.println("Bester Zug: " + optimal.getMove());
         }
         return optimal.getMove();
     }
@@ -211,11 +211,37 @@ public class Aufgabe3 {
     
     //***************************  Aufgabe 5  **********************************
     public static void spiel1(int tiefe){
-        // TODO: Implementieren Sie hier die Angabe
+        int[][] ai_spielfeld = spielfeld();
+        boolean gameOver = false;
+        int computer = 1;
+        int currentPlayer = 1;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Möchtest du beginnen? [y/n]");
+        if (scanner.next().equals("y")) {
+            computer = 2;
+        }
+        do {
+            spielstand(ai_spielfeld);
+                if (currentPlayer == computer) {
+                    int findMove = bester(ai_spielfeld, currentPlayer, tiefe);
+                    zug(ai_spielfeld,currentPlayer, findMove);
+                } else {
+                    do {
+                        int spalte = getInputSpalte(scanner, currentPlayer);
+                        zug(ai_spielfeld, currentPlayer, spalte);
+                        if (unerlaubterZug) System.out.println("Hier kannst du keinen Stein platzieren!");
+                    } while (unerlaubterZug);
+                }
+
+            gameOver = (gameFull(ai_spielfeld) || sieg(ai_spielfeld, currentPlayer));
+            currentPlayer = currentPlayer == 1 ? 2 : 1;
+        } while(!gameOver);
+        System.out.println("Das spiel ist vorbei!");
     }
-    //**************************************************************************
+//**************************************************************************
     
     public static void main(String[] args) {
+        spiel1(7);
     }
     public static int[][] spielfeld(){
         int ia_spielfeld[][] = new int[r][s];
@@ -379,12 +405,8 @@ public class Aufgabe3 {
     }
     public static boolean sieg(int[][] f, int spieler) {
 
-
         //Horizontal
         return testStraight(f,spieler,r,s, true) || testStraight(f,spieler,s,r, false) || testDiagonal(f, spieler,0,r-victoryLimit, true) || testDiagonal(f,spieler,victoryLimit -1, r,false);
-
-
-
 
     }
     public static boolean gameFull(int[][] f) {
@@ -415,23 +437,6 @@ public class Aufgabe3 {
     }
 
     //***************************  Aufgabe 5  **********************************
-    public static void spiel(){
-        Scanner scanner = new Scanner(System.in);
-        int[][] ai_spielfeld = spielfeld();
-        boolean gameOver = false;
-        int currentPlayer = 1;
-        do {
-            spielstand(ai_spielfeld);
-            do {
-                int spalte = getInputSpalte(scanner, currentPlayer);
-                zug(ai_spielfeld, currentPlayer, spalte);
-                if (unerlaubterZug) System.out.println("Hier kannst du keinen Stein platzieren!");
-            } while (unerlaubterZug);
-            gameOver = (gameFull(ai_spielfeld) || sieg(ai_spielfeld, currentPlayer));
-            currentPlayer = currentPlayer == 1 ? 2 : 1;
-        } while(!gameOver);
-        System.out.println("Das spiel ist vorbei!");
-    }
 
 }
 class Points {

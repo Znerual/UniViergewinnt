@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f859384-5eb7-42ca-9d4e-b7689a1a07a6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Aufgabe3/build/classes/main/Aufgabe3.class" afterPath="$PROJECT_DIR$/Aufgabe3/build/classes/main/Aufgabe3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Aufgabe3/build/classes/main/Points.class" afterPath="$PROJECT_DIR$/Aufgabe3/build/classes/main/Points.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Aufgabe3/build/classes/main/Aufgabe3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Aufgabe3/build/classes/main/Points.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Aufgabe3/tasks/Aufgabe3.java" afterPath="$PROJECT_DIR$/Aufgabe3/tasks/Aufgabe3.java" />
     </list>
@@ -55,11 +55,19 @@
       <file leaf-file-name="Aufgabe3.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Aufgabe3/tasks/Aufgabe3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="197" column="57" selection-start-line="197" selection-start-column="57" selection-end-line="197" selection-end-column="57" />
+            <state relative-caret-position="1149">
+              <caret line="243" column="16" selection-start-line="243" selection-start-column="16" selection-end-line="243" selection-end-column="16" />
               <folding>
-                <element signature="e#0#17786#0" expanded="true" />
+                <element signature="e#0#18175#0" expanded="true" />
                 <element signature="imports" expanded="true" />
+                <element signature="method#wert#0;class#Aufgabe3#0" expanded="false" />
+                <element signature="method#besterZug#0;class#Aufgabe3#0" expanded="false" />
+                <element signature="method#negamaxRec#0;class#Aufgabe3#0" expanded="false" />
+                <element signature="method#negamax#0;class#Aufgabe3#0" expanded="false" />
+                <element signature="method#deepCopy#0;class#Aufgabe3#0" expanded="false" />
+                <element signature="e#10127#10128#0" expanded="true" />
+                <element signature="e#10152#10153#0" expanded="true" />
+                <element signature="method#spielfeld#0;class#Aufgabe3#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -164,6 +172,28 @@
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Manifest</id>
+          </State>
+          <State>
+            <id>Spelling</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>SpellCheckingInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
@@ -178,7 +208,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -191,23 +221,7 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Aufgabenblatt1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="ProjectPane">
-        <subPane />
-      </pane>
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="GoToClass.includeLibraries" value="false" />
@@ -225,12 +239,12 @@
     <property name="options.lastSelected" value="project.propCompiler" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="full.screen.before.presentation.mode" value="false" />
   </component>
-  <component name="RunManager" selected="JUnit.Aufgabe3Test">
+  <component name="RunManager" selected="Application.Aufgabe3">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -724,22 +738,17 @@
       <option name="project" value="LOCAL" />
       <updated>1479760591033</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="negmax funktioniert">
+      <created>1479836945611</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1479836945611</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Aufgabe3Test - 2016.11.22 at 18h 27m 57s.xml">
-      <configuration name="Aufgabe3Test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Aufgabe3Test - 2016.11.22 at 18h 29m 40s.xml">
-      <configuration name="Aufgabe3Test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Aufgabe3Test - 2016.11.22 at 18h 32m 31s.xml">
-      <configuration name="Aufgabe3Test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Aufgabe3Test - 2016.11.22 at 18h 32m 59s.xml">
-      <configuration name="Aufgabe3Test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Aufgabe3Test - 2016.11.22 at 18h 33m 56s.xml">
       <configuration name="Aufgabe3Test" configurationId="JUnit" />
     </history-entry>
@@ -758,13 +767,25 @@
     <history-entry file="Aufgabe3Test - 2016.11.22 at 18h 47m 07s.xml">
       <configuration name="Aufgabe3Test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Aufgabe3Test - 2016.11.22 at 18h 50m 15s.xml">
+      <configuration name="Aufgabe3Test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Aufgabe3Test - 2016.11.22 at 18h 50m 26s.xml">
+      <configuration name="Aufgabe3Test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Aufgabe3Test - 2016.11.22 at 18h 51m 01s.xml">
+      <configuration name="Aufgabe3Test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Aufgabe3Test - 2016.11.22 at 19h 05m 27s.xml">
+      <configuration name="Aufgabe3Test" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="140000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -772,7 +793,7 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28012684" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39534885" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.205074" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -841,7 +862,8 @@
     <MESSAGE value="Wert funktion funktioniert" />
     <MESSAGE value="negamax begonnen" />
     <MESSAGE value="negamax weitergeführt, deepCopy durch passende Funktion zum zurücknehmen der züge ersetzen" />
-    <option name="LAST_COMMIT_MESSAGE" value="negamax weitergeführt, deepCopy durch passende Funktion zum zurücknehmen der züge ersetzen" />
+    <MESSAGE value="negmax funktioniert" />
+    <option name="LAST_COMMIT_MESSAGE" value="negmax funktioniert" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -963,8 +985,16 @@
         <state relative-caret-position="225">
           <caret line="9" column="74" selection-start-line="9" selection-start-column="74" selection-end-line="9" selection-end-column="74" />
           <folding>
-            <element signature="e#0#17786#0" expanded="true" />
+            <element signature="e#0#18175#0" expanded="true" />
             <element signature="imports" expanded="true" />
+            <element signature="method#wert#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="method#besterZug#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="method#negamaxRec#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="method#negamax#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="method#deepCopy#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="e#10127#10128#0" expanded="true" />
+            <element signature="e#10152#10153#0" expanded="true" />
+            <element signature="method#spielfeld#0;class#Aufgabe3#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1006,8 +1036,16 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#17786#0" expanded="true" />
+            <element signature="e#0#18175#0" expanded="true" />
             <element signature="imports" expanded="true" />
+            <element signature="method#wert#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="method#besterZug#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="method#negamaxRec#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="method#negamax#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="method#deepCopy#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="e#10127#10128#0" expanded="true" />
+            <element signature="e#10152#10153#0" expanded="true" />
+            <element signature="method#spielfeld#0;class#Aufgabe3#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1057,8 +1095,16 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#17786#0" expanded="true" />
+            <element signature="e#0#18175#0" expanded="true" />
             <element signature="imports" expanded="true" />
+            <element signature="method#wert#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="method#besterZug#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="method#negamaxRec#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="method#negamax#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="method#deepCopy#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="e#10127#10128#0" expanded="true" />
+            <element signature="e#10152#10153#0" expanded="true" />
+            <element signature="method#spielfeld#0;class#Aufgabe3#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1068,8 +1114,16 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#17786#0" expanded="true" />
+            <element signature="e#0#18175#0" expanded="true" />
             <element signature="imports" expanded="true" />
+            <element signature="method#wert#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="method#besterZug#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="method#negamaxRec#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="method#negamax#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="method#deepCopy#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="e#10127#10128#0" expanded="true" />
+            <element signature="e#10152#10153#0" expanded="true" />
+            <element signature="method#spielfeld#0;class#Aufgabe3#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1097,8 +1151,16 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#17786#0" expanded="true" />
+            <element signature="e#0#18175#0" expanded="true" />
             <element signature="imports" expanded="true" />
+            <element signature="method#wert#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="method#besterZug#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="method#negamaxRec#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="method#negamax#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="method#deepCopy#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="e#10127#10128#0" expanded="true" />
+            <element signature="e#10152#10153#0" expanded="true" />
+            <element signature="method#spielfeld#0;class#Aufgabe3#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1126,8 +1188,16 @@
         <state relative-caret-position="0">
           <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
           <folding>
-            <element signature="e#0#17786#0" expanded="true" />
+            <element signature="e#0#18175#0" expanded="true" />
             <element signature="imports" expanded="true" />
+            <element signature="method#wert#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="method#besterZug#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="method#negamaxRec#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="method#negamax#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="method#deepCopy#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="e#10127#10128#0" expanded="true" />
+            <element signature="e#10152#10153#0" expanded="true" />
+            <element signature="method#spielfeld#0;class#Aufgabe3#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1155,8 +1225,16 @@
         <state relative-caret-position="0">
           <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
           <folding>
-            <element signature="e#0#17786#0" expanded="true" />
+            <element signature="e#0#18175#0" expanded="true" />
             <element signature="imports" expanded="true" />
+            <element signature="method#wert#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="method#besterZug#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="method#negamaxRec#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="method#negamax#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="method#deepCopy#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="e#10127#10128#0" expanded="true" />
+            <element signature="e#10152#10153#0" expanded="true" />
+            <element signature="method#spielfeld#0;class#Aufgabe3#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1184,8 +1262,16 @@
         <state relative-caret-position="0">
           <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
           <folding>
-            <element signature="e#0#17786#0" expanded="true" />
+            <element signature="e#0#18175#0" expanded="true" />
             <element signature="imports" expanded="true" />
+            <element signature="method#wert#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="method#besterZug#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="method#negamaxRec#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="method#negamax#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="method#deepCopy#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="e#10127#10128#0" expanded="true" />
+            <element signature="e#10152#10153#0" expanded="true" />
+            <element signature="method#spielfeld#0;class#Aufgabe3#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1213,8 +1299,16 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#17786#0" expanded="true" />
+            <element signature="e#0#18175#0" expanded="true" />
             <element signature="imports" expanded="true" />
+            <element signature="method#wert#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="method#besterZug#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="method#negamaxRec#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="method#negamax#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="method#deepCopy#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="e#10127#10128#0" expanded="true" />
+            <element signature="e#10152#10153#0" expanded="true" />
+            <element signature="method#spielfeld#0;class#Aufgabe3#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1242,8 +1336,16 @@
         <state relative-caret-position="0">
           <caret line="9" column="79" selection-start-line="9" selection-start-column="79" selection-end-line="9" selection-end-column="79" />
           <folding>
-            <element signature="e#0#17786#0" expanded="true" />
+            <element signature="e#0#18175#0" expanded="true" />
             <element signature="imports" expanded="true" />
+            <element signature="method#wert#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="method#besterZug#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="method#negamaxRec#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="method#negamax#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="method#deepCopy#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="e#10127#10128#0" expanded="true" />
+            <element signature="e#10152#10153#0" expanded="true" />
+            <element signature="method#spielfeld#0;class#Aufgabe3#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1271,8 +1373,16 @@
         <state relative-caret-position="0">
           <caret line="9" column="79" selection-start-line="9" selection-start-column="79" selection-end-line="9" selection-end-column="79" />
           <folding>
-            <element signature="e#0#17786#0" expanded="true" />
+            <element signature="e#0#18175#0" expanded="true" />
             <element signature="imports" expanded="true" />
+            <element signature="method#wert#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="method#besterZug#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="method#negamaxRec#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="method#negamax#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="method#deepCopy#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="e#10127#10128#0" expanded="true" />
+            <element signature="e#10152#10153#0" expanded="true" />
+            <element signature="method#spielfeld#0;class#Aufgabe3#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1300,8 +1410,16 @@
         <state relative-caret-position="0">
           <caret line="0" column="21" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
           <folding>
-            <element signature="e#0#17786#0" expanded="true" />
+            <element signature="e#0#18175#0" expanded="true" />
             <element signature="imports" expanded="true" />
+            <element signature="method#wert#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="method#besterZug#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="method#negamaxRec#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="method#negamax#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="method#deepCopy#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="e#10127#10128#0" expanded="true" />
+            <element signature="e#10152#10153#0" expanded="true" />
+            <element signature="method#spielfeld#0;class#Aufgabe3#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1318,22 +1436,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Aufgabe5/tests/Aufgabe5Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Aufgabe4/tests/Aufgabe4Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1392,13 +1494,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Aufgabe4/tests/Aufgabe4Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Aufgabe5/tests/Aufgabe5Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Aufgabe3/tasks/Aufgabe3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="197" column="57" selection-start-line="197" selection-start-column="57" selection-end-line="197" selection-end-column="57" />
+        <state relative-caret-position="1149">
+          <caret line="243" column="16" selection-start-line="243" selection-start-column="16" selection-end-line="243" selection-end-column="16" />
           <folding>
-            <element signature="e#0#17786#0" expanded="true" />
+            <element signature="e#0#18175#0" expanded="true" />
             <element signature="imports" expanded="true" />
+            <element signature="method#wert#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="method#besterZug#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="method#negamaxRec#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="method#negamax#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="method#deepCopy#0;class#Aufgabe3#0" expanded="false" />
+            <element signature="e#10127#10128#0" expanded="true" />
+            <element signature="e#10152#10153#0" expanded="true" />
+            <element signature="method#spielfeld#0;class#Aufgabe3#0" expanded="false" />
           </folding>
         </state>
       </provider>
