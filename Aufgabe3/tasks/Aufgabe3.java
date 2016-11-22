@@ -232,7 +232,7 @@ public class Aufgabe3 {
                         if (unerlaubterZug) System.out.println("Hier kannst du keinen Stein platzieren!");
                     } while (unerlaubterZug);
                 }
-            optisch.move(ai_spielfeld);
+            optisch.makeMove(ai_spielfeld);
             gameOver = (gameFull(ai_spielfeld) || sieg(ai_spielfeld, currentPlayer));
             currentPlayer = currentPlayer == 1 ? 2 : 1;
         } while(!gameOver);
@@ -404,10 +404,7 @@ public class Aufgabe3 {
         }
     }
     public static boolean sieg(int[][] f, int spieler) {
-
-        //Horizontal
         return testStraight(f,spieler,r,s, true) || testStraight(f,spieler,s,r, false) || testDiagonal(f, spieler,0,r-victoryLimit, true) || testDiagonal(f,spieler,victoryLimit -1, r,false);
-
     }
     public static boolean gameFull(int[][] f) {
         for (int i = 0; i < s; i++) {
@@ -440,6 +437,7 @@ public class Aufgabe3 {
 
 }
 class Points {
+    private int m_value = 0;
     public Points() {
     }
 
@@ -453,17 +451,26 @@ class Points {
     public void add(int punkte) {
         m_value += punkte;
     }
-    private int m_value = 0;
+
 }
 class Move {
     int rank;
     int move;
     boolean initialised;
 
+    public Move() {
+        this.move = 0;
+        this.rank = 0;
+    }
+    public Move(int move, int rank) {
+        this.move = move;
+        this.rank = rank;
+        initialised = true;
+    }
+
     public int getMove() {
         return move;
     }
-
     public void setMove(int move) {
         this.move = move;
         initialised = true;
@@ -473,23 +480,10 @@ class Move {
         this.rank = rank;
         initialised = true;
     }
-
-
-
     public int getRank() {
         return rank;
     }
 
-    public Move() {
-        this.move = 0;
-        this.rank = 0;
-    }
-
-    public Move(int move, int rank) {
-        this.move = move;
-        this.rank = rank;
-        initialised = true;
-    }
     public boolean isInitialised() { return initialised;}
 }
 class Visual extends JFrame {
@@ -499,12 +493,12 @@ class Visual extends JFrame {
     public Visual(int[][] startGrid) {
         this.setTitle("Spielfeld");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setSize(spaltenBreite * Aufgabe3.s + 2 * Field.offsetX + 50, zeilenHoehe * Aufgabe3.r + + 2 * Field.offsetY + 50);
+        this.setSize((spaltenBreite + Field.paddingX) * Aufgabe3.s + 2 * Field.offsetX + 50, (zeilenHoehe + Field.paddingY) * Aufgabe3.r + + 2 * Field.offsetY + 50);
         panel = new Field(startGrid);
         this.add(panel);
         this.setVisible(true);
     }
-    public void move(int[][] f) {
+    public void makeMove(int[][] f) {
         panel.makeMove(f);
     }
 
@@ -512,6 +506,8 @@ class Visual extends JFrame {
 class Field extends JPanel {
     public static final int offsetX = 20;
    public static final int offsetY = 20;
+    public static final int paddingX = 4;
+    public static final int paddingY = 4;
     private int[][] spielfeld;
     public void makeMove(int[][] newField) {
         spielfeld = newField;
@@ -520,23 +516,30 @@ class Field extends JPanel {
     public Field(int[][] startGrid) {
         spielfeld = startGrid;
     }
+    private void paintMove(Graphics g, int i, int j) {
+        g.fillOval(offsetX + (j * (Visual.spaltenBreite + paddingX)) + (paddingX / 2), offsetY + ( (Aufgabe3.r - i) * (Visual.zeilenHoehe + paddingY))+ (paddingY / 2), Visual.spaltenBreite, Visual.zeilenHoehe );
+        g.setColor(new Color(0,0,0));
+        g.drawOval(offsetX + (j * (Visual.spaltenBreite + paddingX)) + (paddingX / 2), offsetY + ( (Aufgabe3.r - i) * (Visual.zeilenHoehe + paddingY))+ (paddingY / 2), Visual.spaltenBreite, Visual.zeilenHoehe );
+    }
     public void paintComponent(Graphics g) {
-        for (int i = 0; i < Aufgabe3.s + 1; i++) {
-            g.drawLine(offsetX + (i * Visual.spaltenBreite), offsetY,offsetX + (i * Visual.spaltenBreite), offsetY + (Aufgabe3.r + 1) * Visual.zeilenHoehe);
-        }
-        for (int i = 0; i < Aufgabe3.r + 1; i++) {
-            g.drawLine(offsetX , offsetY  + ((i+1) * Visual.zeilenHoehe),offsetX + (Aufgabe3.s) * Visual.zeilenHoehe, offsetY  + ((i+1) * Visual.zeilenHoehe));
+        for (int i = 0; i <= Math.max(Aufgabe3.s, Aufgabe3.r); i++) {
+            if (i <= Aufgabe3.s) {
+                g.drawLine(offsetX + (i * (Visual.spaltenBreite + paddingX)), offsetY,offsetX + (i * (Visual.spaltenBreite + paddingX)), offsetY + (Aufgabe3.r + 1) * (Visual.zeilenHoehe + paddingY));
+            }
+            if (i <= Aufgabe3.r) {
+                g.drawLine(offsetX, offsetY + ((i + 1) * (Visual.zeilenHoehe + paddingY)), offsetX + (Aufgabe3.s) * (Visual.spaltenBreite + paddingX), offsetY + ((i + 1) * (Visual.zeilenHoehe + paddingY)));
+            }
         }
         for (int i = Aufgabe3.r - 1; i >= 0;i--) {
             for (int j = 0; j < Aufgabe3.s; j++) {
                 switch (spielfeld[i][j]) {
                     case 1:
                         g.setColor(new Color(255,20,20));
-                        g.fillOval(offsetX + (j * Visual.spaltenBreite), offsetY + ( (Aufgabe3.r - i) * Visual.zeilenHoehe), Visual.spaltenBreite, Visual.zeilenHoehe );
+                        paintMove(g, i , j);
                         break;
                     case 2:
-                        g.setColor(new Color(20,255, 20));
-                        g.fillOval(offsetX + (j * Visual.spaltenBreite), offsetY + ((Aufgabe3.r - i) * Visual.zeilenHoehe), Visual.spaltenBreite, Visual.zeilenHoehe );
+                        g.setColor(new Color(6,125,6));
+                        paintMove(g, i , j);
                         break;
                 }
 

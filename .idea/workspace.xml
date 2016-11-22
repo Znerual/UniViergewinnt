@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9f859384-5eb7-42ca-9d4e-b7689a1a07a6" name="Default" comment="">
+    <list default="true" id="9f859384-5eb7-42ca-9d4e-b7689a1a07a6" name="Default" comment="Visual Output erstellt">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Aufgabe3/tasks/Aufgabe3.java" afterPath="$PROJECT_DIR$/Aufgabe3/tasks/Aufgabe3.java" />
     </list>
     <ignored path="Aufgabenblatt3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,21 +53,25 @@
       <file leaf-file-name="Aufgabe3.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Aufgabe3/tasks/Aufgabe3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="523" column="28" selection-start-line="523" selection-start-column="28" selection-end-line="523" selection-end-column="28" />
+            <state relative-caret-position="149">
+              <caret line="509" column="40" selection-start-line="509" selection-start-column="40" selection-end-line="509" selection-end-column="40" />
               <folding>
-                <element signature="e#0#20281#0" expanded="true" />
+                <element signature="e#0#20804#0" expanded="true" />
                 <element signature="imports" expanded="true" />
                 <element signature="method#wert#0;class#Aufgabe3#0" expanded="false" />
                 <element signature="method#besterZug#0;class#Aufgabe3#0" expanded="false" />
                 <element signature="method#deepCopy#0;class#Aufgabe3#0" expanded="false" />
-                <element signature="e#10077#10078#0" expanded="true" />
-                <element signature="e#10102#10103#0" expanded="true" />
+                <element signature="e#10081#10082#0" expanded="true" />
+                <element signature="e#10106#10107#0" expanded="true" />
                 <element signature="method#spielfeld#0;class#Aufgabe3#0" expanded="false" />
-                <element signature="e#18668#18669#0" expanded="true" />
-                <element signature="e#18701#18702#0" expanded="true" />
-                <element signature="e#18990#18991#0" expanded="true" />
-                <element signature="e#19027#19028#0" expanded="true" />
+                <element signature="method#Move#0;class#Move#0" expanded="false" />
+                <element signature="method#Move#1;class#Move#0" expanded="false" />
+                <element signature="method#setMove#0;class#Move#0" expanded="false" />
+                <element signature="method#setRank#0;class#Move#0" expanded="false" />
+                <element signature="e#18688#18689#0" expanded="true" />
+                <element signature="e#18721#18722#0" expanded="true" />
+                <element signature="e#19094#19095#0" expanded="true" />
+                <element signature="e#19131#19132#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -240,42 +245,7 @@
     </navigator>
     <panes>
       <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Aufgabenblatt5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Aufgabenblatt5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Aufgabe3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Aufgabenblatt5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Aufgabe3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Aufgabe3.java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
+        <subPane />
       </pane>
       <pane id="Scope" />
       <pane id="Scratches" />
@@ -827,7 +797,14 @@
       <option name="project" value="LOCAL" />
       <updated>1479841950460</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Visual Output erstellt">
+      <created>1479842170026</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1479842170026</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -867,20 +844,20 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2832981" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28012684" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.205074" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.205074" sideWeight="0.50416666" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.205074" sideWeight="0.49583334" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2046875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41022965" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39852008" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1013,7 +990,7 @@
           <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="39" />
+      <option name="time" value="40" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1037,18 +1014,22 @@
         <state relative-caret-position="225">
           <caret line="9" column="74" selection-start-line="9" selection-start-column="74" selection-end-line="9" selection-end-column="74" />
           <folding>
-            <element signature="e#0#20281#0" expanded="true" />
+            <element signature="e#0#20804#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="method#wert#0;class#Aufgabe3#0" expanded="false" />
             <element signature="method#besterZug#0;class#Aufgabe3#0" expanded="false" />
             <element signature="method#deepCopy#0;class#Aufgabe3#0" expanded="false" />
-            <element signature="e#10077#10078#0" expanded="true" />
-            <element signature="e#10102#10103#0" expanded="true" />
+            <element signature="e#10081#10082#0" expanded="true" />
+            <element signature="e#10106#10107#0" expanded="true" />
             <element signature="method#spielfeld#0;class#Aufgabe3#0" expanded="false" />
-            <element signature="e#18668#18669#0" expanded="true" />
-            <element signature="e#18701#18702#0" expanded="true" />
-            <element signature="e#18990#18991#0" expanded="true" />
-            <element signature="e#19027#19028#0" expanded="true" />
+            <element signature="method#Move#0;class#Move#0" expanded="false" />
+            <element signature="method#Move#1;class#Move#0" expanded="false" />
+            <element signature="method#setMove#0;class#Move#0" expanded="false" />
+            <element signature="method#setRank#0;class#Move#0" expanded="false" />
+            <element signature="e#18688#18689#0" expanded="true" />
+            <element signature="e#18721#18722#0" expanded="true" />
+            <element signature="e#19094#19095#0" expanded="true" />
+            <element signature="e#19131#19132#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1090,18 +1071,22 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#20281#0" expanded="true" />
+            <element signature="e#0#20804#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="method#wert#0;class#Aufgabe3#0" expanded="false" />
             <element signature="method#besterZug#0;class#Aufgabe3#0" expanded="false" />
             <element signature="method#deepCopy#0;class#Aufgabe3#0" expanded="false" />
-            <element signature="e#10077#10078#0" expanded="true" />
-            <element signature="e#10102#10103#0" expanded="true" />
+            <element signature="e#10081#10082#0" expanded="true" />
+            <element signature="e#10106#10107#0" expanded="true" />
             <element signature="method#spielfeld#0;class#Aufgabe3#0" expanded="false" />
-            <element signature="e#18668#18669#0" expanded="true" />
-            <element signature="e#18701#18702#0" expanded="true" />
-            <element signature="e#18990#18991#0" expanded="true" />
-            <element signature="e#19027#19028#0" expanded="true" />
+            <element signature="method#Move#0;class#Move#0" expanded="false" />
+            <element signature="method#Move#1;class#Move#0" expanded="false" />
+            <element signature="method#setMove#0;class#Move#0" expanded="false" />
+            <element signature="method#setRank#0;class#Move#0" expanded="false" />
+            <element signature="e#18688#18689#0" expanded="true" />
+            <element signature="e#18721#18722#0" expanded="true" />
+            <element signature="e#19094#19095#0" expanded="true" />
+            <element signature="e#19131#19132#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1151,18 +1136,22 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#20281#0" expanded="true" />
+            <element signature="e#0#20804#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="method#wert#0;class#Aufgabe3#0" expanded="false" />
             <element signature="method#besterZug#0;class#Aufgabe3#0" expanded="false" />
             <element signature="method#deepCopy#0;class#Aufgabe3#0" expanded="false" />
-            <element signature="e#10077#10078#0" expanded="true" />
-            <element signature="e#10102#10103#0" expanded="true" />
+            <element signature="e#10081#10082#0" expanded="true" />
+            <element signature="e#10106#10107#0" expanded="true" />
             <element signature="method#spielfeld#0;class#Aufgabe3#0" expanded="false" />
-            <element signature="e#18668#18669#0" expanded="true" />
-            <element signature="e#18701#18702#0" expanded="true" />
-            <element signature="e#18990#18991#0" expanded="true" />
-            <element signature="e#19027#19028#0" expanded="true" />
+            <element signature="method#Move#0;class#Move#0" expanded="false" />
+            <element signature="method#Move#1;class#Move#0" expanded="false" />
+            <element signature="method#setMove#0;class#Move#0" expanded="false" />
+            <element signature="method#setRank#0;class#Move#0" expanded="false" />
+            <element signature="e#18688#18689#0" expanded="true" />
+            <element signature="e#18721#18722#0" expanded="true" />
+            <element signature="e#19094#19095#0" expanded="true" />
+            <element signature="e#19131#19132#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1172,18 +1161,22 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#20281#0" expanded="true" />
+            <element signature="e#0#20804#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="method#wert#0;class#Aufgabe3#0" expanded="false" />
             <element signature="method#besterZug#0;class#Aufgabe3#0" expanded="false" />
             <element signature="method#deepCopy#0;class#Aufgabe3#0" expanded="false" />
-            <element signature="e#10077#10078#0" expanded="true" />
-            <element signature="e#10102#10103#0" expanded="true" />
+            <element signature="e#10081#10082#0" expanded="true" />
+            <element signature="e#10106#10107#0" expanded="true" />
             <element signature="method#spielfeld#0;class#Aufgabe3#0" expanded="false" />
-            <element signature="e#18668#18669#0" expanded="true" />
-            <element signature="e#18701#18702#0" expanded="true" />
-            <element signature="e#18990#18991#0" expanded="true" />
-            <element signature="e#19027#19028#0" expanded="true" />
+            <element signature="method#Move#0;class#Move#0" expanded="false" />
+            <element signature="method#Move#1;class#Move#0" expanded="false" />
+            <element signature="method#setMove#0;class#Move#0" expanded="false" />
+            <element signature="method#setRank#0;class#Move#0" expanded="false" />
+            <element signature="e#18688#18689#0" expanded="true" />
+            <element signature="e#18721#18722#0" expanded="true" />
+            <element signature="e#19094#19095#0" expanded="true" />
+            <element signature="e#19131#19132#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1211,18 +1204,22 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#20281#0" expanded="true" />
+            <element signature="e#0#20804#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="method#wert#0;class#Aufgabe3#0" expanded="false" />
             <element signature="method#besterZug#0;class#Aufgabe3#0" expanded="false" />
             <element signature="method#deepCopy#0;class#Aufgabe3#0" expanded="false" />
-            <element signature="e#10077#10078#0" expanded="true" />
-            <element signature="e#10102#10103#0" expanded="true" />
+            <element signature="e#10081#10082#0" expanded="true" />
+            <element signature="e#10106#10107#0" expanded="true" />
             <element signature="method#spielfeld#0;class#Aufgabe3#0" expanded="false" />
-            <element signature="e#18668#18669#0" expanded="true" />
-            <element signature="e#18701#18702#0" expanded="true" />
-            <element signature="e#18990#18991#0" expanded="true" />
-            <element signature="e#19027#19028#0" expanded="true" />
+            <element signature="method#Move#0;class#Move#0" expanded="false" />
+            <element signature="method#Move#1;class#Move#0" expanded="false" />
+            <element signature="method#setMove#0;class#Move#0" expanded="false" />
+            <element signature="method#setRank#0;class#Move#0" expanded="false" />
+            <element signature="e#18688#18689#0" expanded="true" />
+            <element signature="e#18721#18722#0" expanded="true" />
+            <element signature="e#19094#19095#0" expanded="true" />
+            <element signature="e#19131#19132#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1250,18 +1247,22 @@
         <state relative-caret-position="0">
           <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
           <folding>
-            <element signature="e#0#20281#0" expanded="true" />
+            <element signature="e#0#20804#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="method#wert#0;class#Aufgabe3#0" expanded="false" />
             <element signature="method#besterZug#0;class#Aufgabe3#0" expanded="false" />
             <element signature="method#deepCopy#0;class#Aufgabe3#0" expanded="false" />
-            <element signature="e#10077#10078#0" expanded="true" />
-            <element signature="e#10102#10103#0" expanded="true" />
+            <element signature="e#10081#10082#0" expanded="true" />
+            <element signature="e#10106#10107#0" expanded="true" />
             <element signature="method#spielfeld#0;class#Aufgabe3#0" expanded="false" />
-            <element signature="e#18668#18669#0" expanded="true" />
-            <element signature="e#18701#18702#0" expanded="true" />
-            <element signature="e#18990#18991#0" expanded="true" />
-            <element signature="e#19027#19028#0" expanded="true" />
+            <element signature="method#Move#0;class#Move#0" expanded="false" />
+            <element signature="method#Move#1;class#Move#0" expanded="false" />
+            <element signature="method#setMove#0;class#Move#0" expanded="false" />
+            <element signature="method#setRank#0;class#Move#0" expanded="false" />
+            <element signature="e#18688#18689#0" expanded="true" />
+            <element signature="e#18721#18722#0" expanded="true" />
+            <element signature="e#19094#19095#0" expanded="true" />
+            <element signature="e#19131#19132#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1289,18 +1290,22 @@
         <state relative-caret-position="0">
           <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
           <folding>
-            <element signature="e#0#20281#0" expanded="true" />
+            <element signature="e#0#20804#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="method#wert#0;class#Aufgabe3#0" expanded="false" />
             <element signature="method#besterZug#0;class#Aufgabe3#0" expanded="false" />
             <element signature="method#deepCopy#0;class#Aufgabe3#0" expanded="false" />
-            <element signature="e#10077#10078#0" expanded="true" />
-            <element signature="e#10102#10103#0" expanded="true" />
+            <element signature="e#10081#10082#0" expanded="true" />
+            <element signature="e#10106#10107#0" expanded="true" />
             <element signature="method#spielfeld#0;class#Aufgabe3#0" expanded="false" />
-            <element signature="e#18668#18669#0" expanded="true" />
-            <element signature="e#18701#18702#0" expanded="true" />
-            <element signature="e#18990#18991#0" expanded="true" />
-            <element signature="e#19027#19028#0" expanded="true" />
+            <element signature="method#Move#0;class#Move#0" expanded="false" />
+            <element signature="method#Move#1;class#Move#0" expanded="false" />
+            <element signature="method#setMove#0;class#Move#0" expanded="false" />
+            <element signature="method#setRank#0;class#Move#0" expanded="false" />
+            <element signature="e#18688#18689#0" expanded="true" />
+            <element signature="e#18721#18722#0" expanded="true" />
+            <element signature="e#19094#19095#0" expanded="true" />
+            <element signature="e#19131#19132#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1328,18 +1333,22 @@
         <state relative-caret-position="0">
           <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
           <folding>
-            <element signature="e#0#20281#0" expanded="true" />
+            <element signature="e#0#20804#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="method#wert#0;class#Aufgabe3#0" expanded="false" />
             <element signature="method#besterZug#0;class#Aufgabe3#0" expanded="false" />
             <element signature="method#deepCopy#0;class#Aufgabe3#0" expanded="false" />
-            <element signature="e#10077#10078#0" expanded="true" />
-            <element signature="e#10102#10103#0" expanded="true" />
+            <element signature="e#10081#10082#0" expanded="true" />
+            <element signature="e#10106#10107#0" expanded="true" />
             <element signature="method#spielfeld#0;class#Aufgabe3#0" expanded="false" />
-            <element signature="e#18668#18669#0" expanded="true" />
-            <element signature="e#18701#18702#0" expanded="true" />
-            <element signature="e#18990#18991#0" expanded="true" />
-            <element signature="e#19027#19028#0" expanded="true" />
+            <element signature="method#Move#0;class#Move#0" expanded="false" />
+            <element signature="method#Move#1;class#Move#0" expanded="false" />
+            <element signature="method#setMove#0;class#Move#0" expanded="false" />
+            <element signature="method#setRank#0;class#Move#0" expanded="false" />
+            <element signature="e#18688#18689#0" expanded="true" />
+            <element signature="e#18721#18722#0" expanded="true" />
+            <element signature="e#19094#19095#0" expanded="true" />
+            <element signature="e#19131#19132#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1367,18 +1376,22 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#20281#0" expanded="true" />
+            <element signature="e#0#20804#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="method#wert#0;class#Aufgabe3#0" expanded="false" />
             <element signature="method#besterZug#0;class#Aufgabe3#0" expanded="false" />
             <element signature="method#deepCopy#0;class#Aufgabe3#0" expanded="false" />
-            <element signature="e#10077#10078#0" expanded="true" />
-            <element signature="e#10102#10103#0" expanded="true" />
+            <element signature="e#10081#10082#0" expanded="true" />
+            <element signature="e#10106#10107#0" expanded="true" />
             <element signature="method#spielfeld#0;class#Aufgabe3#0" expanded="false" />
-            <element signature="e#18668#18669#0" expanded="true" />
-            <element signature="e#18701#18702#0" expanded="true" />
-            <element signature="e#18990#18991#0" expanded="true" />
-            <element signature="e#19027#19028#0" expanded="true" />
+            <element signature="method#Move#0;class#Move#0" expanded="false" />
+            <element signature="method#Move#1;class#Move#0" expanded="false" />
+            <element signature="method#setMove#0;class#Move#0" expanded="false" />
+            <element signature="method#setRank#0;class#Move#0" expanded="false" />
+            <element signature="e#18688#18689#0" expanded="true" />
+            <element signature="e#18721#18722#0" expanded="true" />
+            <element signature="e#19094#19095#0" expanded="true" />
+            <element signature="e#19131#19132#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1406,18 +1419,22 @@
         <state relative-caret-position="0">
           <caret line="9" column="79" selection-start-line="9" selection-start-column="79" selection-end-line="9" selection-end-column="79" />
           <folding>
-            <element signature="e#0#20281#0" expanded="true" />
+            <element signature="e#0#20804#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="method#wert#0;class#Aufgabe3#0" expanded="false" />
             <element signature="method#besterZug#0;class#Aufgabe3#0" expanded="false" />
             <element signature="method#deepCopy#0;class#Aufgabe3#0" expanded="false" />
-            <element signature="e#10077#10078#0" expanded="true" />
-            <element signature="e#10102#10103#0" expanded="true" />
+            <element signature="e#10081#10082#0" expanded="true" />
+            <element signature="e#10106#10107#0" expanded="true" />
             <element signature="method#spielfeld#0;class#Aufgabe3#0" expanded="false" />
-            <element signature="e#18668#18669#0" expanded="true" />
-            <element signature="e#18701#18702#0" expanded="true" />
-            <element signature="e#18990#18991#0" expanded="true" />
-            <element signature="e#19027#19028#0" expanded="true" />
+            <element signature="method#Move#0;class#Move#0" expanded="false" />
+            <element signature="method#Move#1;class#Move#0" expanded="false" />
+            <element signature="method#setMove#0;class#Move#0" expanded="false" />
+            <element signature="method#setRank#0;class#Move#0" expanded="false" />
+            <element signature="e#18688#18689#0" expanded="true" />
+            <element signature="e#18721#18722#0" expanded="true" />
+            <element signature="e#19094#19095#0" expanded="true" />
+            <element signature="e#19131#19132#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1445,18 +1462,22 @@
         <state relative-caret-position="0">
           <caret line="9" column="79" selection-start-line="9" selection-start-column="79" selection-end-line="9" selection-end-column="79" />
           <folding>
-            <element signature="e#0#20281#0" expanded="true" />
+            <element signature="e#0#20804#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="method#wert#0;class#Aufgabe3#0" expanded="false" />
             <element signature="method#besterZug#0;class#Aufgabe3#0" expanded="false" />
             <element signature="method#deepCopy#0;class#Aufgabe3#0" expanded="false" />
-            <element signature="e#10077#10078#0" expanded="true" />
-            <element signature="e#10102#10103#0" expanded="true" />
+            <element signature="e#10081#10082#0" expanded="true" />
+            <element signature="e#10106#10107#0" expanded="true" />
             <element signature="method#spielfeld#0;class#Aufgabe3#0" expanded="false" />
-            <element signature="e#18668#18669#0" expanded="true" />
-            <element signature="e#18701#18702#0" expanded="true" />
-            <element signature="e#18990#18991#0" expanded="true" />
-            <element signature="e#19027#19028#0" expanded="true" />
+            <element signature="method#Move#0;class#Move#0" expanded="false" />
+            <element signature="method#Move#1;class#Move#0" expanded="false" />
+            <element signature="method#setMove#0;class#Move#0" expanded="false" />
+            <element signature="method#setRank#0;class#Move#0" expanded="false" />
+            <element signature="e#18688#18689#0" expanded="true" />
+            <element signature="e#18721#18722#0" expanded="true" />
+            <element signature="e#19094#19095#0" expanded="true" />
+            <element signature="e#19131#19132#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1484,18 +1505,22 @@
         <state relative-caret-position="0">
           <caret line="0" column="21" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
           <folding>
-            <element signature="e#0#20281#0" expanded="true" />
+            <element signature="e#0#20804#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="method#wert#0;class#Aufgabe3#0" expanded="false" />
             <element signature="method#besterZug#0;class#Aufgabe3#0" expanded="false" />
             <element signature="method#deepCopy#0;class#Aufgabe3#0" expanded="false" />
-            <element signature="e#10077#10078#0" expanded="true" />
-            <element signature="e#10102#10103#0" expanded="true" />
+            <element signature="e#10081#10082#0" expanded="true" />
+            <element signature="e#10106#10107#0" expanded="true" />
             <element signature="method#spielfeld#0;class#Aufgabe3#0" expanded="false" />
-            <element signature="e#18668#18669#0" expanded="true" />
-            <element signature="e#18701#18702#0" expanded="true" />
-            <element signature="e#18990#18991#0" expanded="true" />
-            <element signature="e#19027#19028#0" expanded="true" />
+            <element signature="method#Move#0;class#Move#0" expanded="false" />
+            <element signature="method#Move#1;class#Move#0" expanded="false" />
+            <element signature="method#setMove#0;class#Move#0" expanded="false" />
+            <element signature="method#setRank#0;class#Move#0" expanded="false" />
+            <element signature="e#18688#18689#0" expanded="true" />
+            <element signature="e#18721#18722#0" expanded="true" />
+            <element signature="e#19094#19095#0" expanded="true" />
+            <element signature="e#19131#19132#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1597,21 +1622,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Aufgabe3/tasks/Aufgabe3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="523" column="28" selection-start-line="523" selection-start-column="28" selection-end-line="523" selection-end-column="28" />
+        <state relative-caret-position="149">
+          <caret line="509" column="40" selection-start-line="509" selection-start-column="40" selection-end-line="509" selection-end-column="40" />
           <folding>
-            <element signature="e#0#20281#0" expanded="true" />
+            <element signature="e#0#20804#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="method#wert#0;class#Aufgabe3#0" expanded="false" />
             <element signature="method#besterZug#0;class#Aufgabe3#0" expanded="false" />
             <element signature="method#deepCopy#0;class#Aufgabe3#0" expanded="false" />
-            <element signature="e#10077#10078#0" expanded="true" />
-            <element signature="e#10102#10103#0" expanded="true" />
+            <element signature="e#10081#10082#0" expanded="true" />
+            <element signature="e#10106#10107#0" expanded="true" />
             <element signature="method#spielfeld#0;class#Aufgabe3#0" expanded="false" />
-            <element signature="e#18668#18669#0" expanded="true" />
-            <element signature="e#18701#18702#0" expanded="true" />
-            <element signature="e#18990#18991#0" expanded="true" />
-            <element signature="e#19027#19028#0" expanded="true" />
+            <element signature="method#Move#0;class#Move#0" expanded="false" />
+            <element signature="method#Move#1;class#Move#0" expanded="false" />
+            <element signature="method#setMove#0;class#Move#0" expanded="false" />
+            <element signature="method#setRank#0;class#Move#0" expanded="false" />
+            <element signature="e#18688#18689#0" expanded="true" />
+            <element signature="e#18721#18722#0" expanded="true" />
+            <element signature="e#19094#19095#0" expanded="true" />
+            <element signature="e#19131#19132#0" expanded="true" />
           </folding>
         </state>
       </provider>
